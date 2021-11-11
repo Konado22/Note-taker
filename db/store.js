@@ -13,15 +13,12 @@ class Store {
 
   addNotes() {
       const add= await this.read();
-        fs.appendFile('../db/db.json', (req,res) =>{
-        const data = this.req;
-        const addData = data.key3 = uuidv1;
-        return  JSON.push(data);
-  })}
-  
-  deleteNotes() {
-    const removeItem = await this.read();
-    
-
-  };
+      const data = this.json(req);
+      const obj = {
+        note: data[1],
+        info: data[2],
+        key3: uuidv1,
+      }
+        fs.appendFile('../db/db.json', obj)
+    }
 };

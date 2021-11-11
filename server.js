@@ -8,7 +8,7 @@ app.use('/', htmlRoute)
 // app.use('/api',apiRoutes)
 app.use(express.static('public'));
 app.use(express.json());
-app.use(express.urlencoded({extended:true}));
+// app.use(express.urlencoded({extended:true}));
 //get request for homepage
 app.listen(PORT, ()=> {
   console.log( `app listening at http://localhost:${PORT}`);
