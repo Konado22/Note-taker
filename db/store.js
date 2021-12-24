@@ -12,13 +12,14 @@ class Store {
    }};
 
   addNotes() {
-      const add= await this.read();
+      const add=  this.read();
       const data = this.json(req);
       const obj = {
         note: data[1],
         info: data[2],
         key3: uuidv1,
       }
-        fs.appendFile('../db/db.json', obj)
+        fs.appendFile('../db/db.json', add)
     }
 };
+module.exports = Store;
