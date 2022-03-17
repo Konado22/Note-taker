@@ -19,7 +19,7 @@ SO THAT I can organize my thoughts and keep track of tasks I need to complete
 ```
 
  ## Installation
-  you will need to install dependencies to run application locally. please install express and uniqid npm packages with the reques npm i || npm install < npmpackage >
+  you will need to install dependencies to run application locally. please install express and uniqid npm packages with the reques npm i || npm install (they are already in the package.json file). From there you can utilize npm run start to start the server for the application at http://localhost:3001/ to reproduce locally
 
   ## Usage
   Feel free to clone or utilize this repo via forking. Please provide credit.
